@@ -111,7 +111,7 @@ div.card-container {
 	background-color: transparent;
 	color: #686971;
 	padding: 0.8em;
-	border-radius: 0.5em;
+	border-radius: 0.3em;
 	display: inline-block;
 }
 
@@ -210,6 +210,12 @@ form.add-task-form {
 	display: none;
 }
 
+p {
+	background-color: white;
+	padding: 0.3em;
+	display: none;
+}
+
 span.temp-add-task {
 	color: initial;
 	border: none;
@@ -223,4 +229,17 @@ span.temp-add-task {
 span.temp-add-task:hover {
 	background: rgba(188, 188, 189, 0.5);
 	text-decoration: underline;
+}
+
+button.add-button {
+	background-color: #aa6361;
+	border: none;
+	border-radius: 2px;
+	color: white;
+	padding: 0.5em 1em;
+	font-size: 1em;
+}
+
+button.add-button:hover {
+	background-color: #975856;
 }

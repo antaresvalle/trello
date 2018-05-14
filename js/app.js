@@ -12,10 +12,9 @@ displayListTitle;
 console.log(displayListTitle);
 
 
-
 displayListTitle.addEventListener('click', function(){
 	// showCard();
-	var inputTitle = document.getElementById('input-task').value;
+	var inputTitle = document.getElementById('input-list').value;
 	console.log(inputTitle);
 	var title = document.getElementsByTagName('h2')[0];
 	
@@ -31,21 +30,19 @@ displayListTitle.addEventListener('click', function(){
 	// Se muestra el texto para agregar una tarea
 
 	var getFormAddTask = document.getElementsByClassName("temp-add-task")[0];
-	getFormAddTask.style.display = 'inline-block';
+	getFormAddTask.style.display = 'block';
 
 	getFormAddTask.addEventListener('click', function(e){
-		// e.preventDefault();
 		showFormAddTask();
 		getFormAddTask.style.display = 'none';
 	});
 
-
+	var showTask = document.getElementsByClassName('add-button')[0];
+	showTask.addEventListener('click', function(){
+		showTaskText();
+	});
 
 	// Se muestra la segunda forma para ingresar una tarea
-
-
-	
-	
 	
 });
 
@@ -62,8 +59,26 @@ function showCard() {
 }
 
 function showFormAddTask(){
-
 	var getFormAddTask = document.getElementsByClassName("add-task-form")[0];
 	getFormAddTask.style.display = 'block';
+
+	var focusInputTask = document.getElementsByTagName('textarea')[0];
+	focusInputTask.focus();
+	console.log(focusInputTask);
+
 }
 
+function showTaskText(){
+	var inputTextTask = document.getElementById('input-task').value;
+	console.log(inputTextTask);
+
+	var task = document.getElementsByTagName('p')[0];
+	task.textContent = inputTextTask;
+	task.style.display = 'block';
+
+	var getFormAddTask = document.getElementsByClassName("add-task-form")[0];
+	getFormAddTask.style.display = 'none';
+
+	var getFormAddTask = document.getElementsByClassName("temp-add-task")[0];
+	getFormAddTask.style.display = 'block';
+}
