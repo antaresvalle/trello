@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trello Antares</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Quicksand" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+<body>
+	<header>
+		<nav id="main-nav">
+			<div class="menu-left">
+				<button id="boards" class="btn-main">Boards</button>
+				<form class="input-nav-header">
+					<input type="" name=""><i class="fas fa-search"></i>
+				</form>
+			</div>
+			<div id="logo">
+				<i class="fas fa-user-astronaut"></i>
+				<h1></h1>
+			</div>
+				
+			<div class="menu-right">
+				<button class="btn-main"><i class="fas fa-plus"></i></button>
+				<button class="btn-main"><i class="fas fa-info"></i></button>
+				<button class="btn-main"><i class="far fa-bell"></i></button>
+				<button class="btn-main profile"><i class="far fa-user"></i></button>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<nav>
+			<div class="menu-left"></div>
+			<div class="menu-right"></div>
+		</nav>
+		<!-- TASK -->
+		
+		<div class="card-container">
+			<h2>List Title</h2>
+			<span class="temp-add-list">Add a list..</span>
+			<form class="add-list-form">
+				<input type="text" name="list-title" placeholder="Add a list.." id="input-task" autofocus="">
+				<div class="btn-list-actions">
+					<button value="save" class="save">Save</button>
+					<button class="cancel">&times</button>
+				</div>
+				<textarea rows="10" cols="50"></textarea>
+				<div class="btn-task-actions">
+					<button value="save" class="save">Save</button>
+					<button class="cancel">&times</button>
+				</div>
+			</form>
+		</div>
+	</main>
+
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

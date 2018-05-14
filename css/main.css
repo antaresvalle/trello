@@ -1,0 +1,201 @@
+body {
+	background-color: white; /*0d0f15*/
+	margin: 0;
+	position: relative;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+/* HEADER */
+div#logo {
+	font-size: 1.5em;
+	color: #d17076;
+}
+
+h1 {
+	color: #ceb5b0;
+	margin: 0;
+	display: inline-block;
+	font-family: 'Cinzel';
+	margin: 0;
+	text-align: center;
+}
+
+h2 {
+	margin: 0 0 0.5em 0;
+	font-size: 1.2em;
+	display: none;
+}
+
+div#logo {
+	width: 33%;
+	text-align: center;
+}
+
+form.input-nav-header {
+	display: inline-block;
+	background-color: hsla(0,0%,100%,.3);
+	color: white;
+	width: 21em;
+}
+
+button {
+	cursor: pointer;
+}
+nav#main-nav {
+	background-color: #1a2a5a;
+	height: 3em;
+}
+
+nav div {
+	display: inline-block;
+}
+
+nav div.menu-left {
+	position: relative;
+	width: 30%;
+	padding: 0.3em 0.5em; 
+}
+
+nav div.menu-right {
+	position: relative;
+	width: 33%;
+	right: 0;
+	text-align: right;
+}
+
+form.input-nav-header input {
+	height: 2em;
+	background-color: transparent;
+	width: 26em;
+	border: none;
+	padding: 0.55em;
+	color: white;
+}
+
+form.input-nav-header input:focus {
+	outline: none;
+}
+
+.btn-main {
+	background-color: hsla(0,0%,100%,.3);
+	padding: 1.1em 2em;
+	border: none;
+	border-radius: 5px;
+	color: white;
+}
+
+.profile {
+	border-radius: 100%;
+	height: 3.7em;
+	width: 3.7em;
+	padding: 0;
+}
+
+.btn-main:hover {
+	background-color: hsla(0,0%,100%,.2)
+}
+
+/* Main */
+
+main {
+	position: relative;
+	padding: 2em;
+}
+
+div.card-container {
+	width: 20%;
+	background-color: transparent;
+	color: #b9bcc7;
+	padding: 0.8em;
+	border-radius: 0.5em;
+	display: inline-block;
+}
+
+ span.temp-add-list {
+	background: rgba(106, 124, 174, 0.5);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 0.5em;
+	margin-bottom: 1em;
+	display: block;
+}
+
+span.temp-add-list:hover {
+	background-color: #6a7cae;
+}
+
+form.add-list-form {
+	width: 100%;
+	position: relative;
+	display: none;
+}
+
+
+
+input {
+	width: 95%;
+}
+
+form.add-list-form input {
+	background: rgba(0,0,0,.08);
+    border-color: #aaa;
+	color: gray;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 0.5em;
+	margin-bottom: 0.5em;
+	font-size: 1em;
+}
+
+form.add-list-form input::placeholder {
+	color: gray;
+}
+ 
+form.add-list-form input:focus {
+	outline: none;
+}
+
+textarea {
+	width: 95%;
+	margin: 1em 0;
+	display: none;
+}
+
+button.save {
+	background-color: #aa6361;
+	border: none;
+	border-radius: 2px;
+	color: white;
+	padding: 0.5em 1em;
+	font-size: 1em;
+}
+
+button.save:hover {
+	background-color: #975856;
+}
+
+button.cancel {
+	color: gray;
+	border: none;
+	background-color: transparent;
+	font-size: 1em;
+	padding: 0 0.5em;
+	font-size: 1.8em;
+}
+
+button.cancel:hover {
+	color: #3c3b3b;
+}
+
+
+div.btn-list-actions {
+
+}
+
+div.btn-task-actions {
+	display: none;
+}
