@@ -31,11 +31,20 @@ displayListTitle.addEventListener('click', function(){
 	// Se muestra el texto para agregar una tarea
 
 	var getFormAddTask = document.getElementsByClassName("temp-add-task")[0];
-	getFormAddTask.style.display = 'block';
+	getFormAddTask.style.display = 'inline-block';
+
+	getFormAddTask.addEventListener('click', function(e){
+		// e.preventDefault();
+		showFormAddTask();
+		getFormAddTask.style.display = 'none';
+	});
 
 
-	// Se muestra la segunda forma para obtener una tarea
 
+	// Se muestra la segunda forma para ingresar una tarea
+
+
+	
 	
 	
 });
