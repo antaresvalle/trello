@@ -9,7 +9,9 @@
 
 </head>
 <body>
+	<!-- HEADER -->
 	<header>
+		<!-- navigation -->
 		<nav id="main-nav">
 			<div class="menu-left">
 				<button id="boards" class="btn-main">Boards</button>
@@ -21,7 +23,6 @@
 				<i class="fas fa-user-astronaut"></i>
 				<h1></h1>
 			</div>
-				
 			<div class="menu-right">
 				<button class="btn-main"><i class="fas fa-plus"></i></button>
 				<button class="btn-main"><i class="fas fa-info"></i></button>
@@ -30,22 +31,27 @@
 			</div>
 		</nav>
 	</header>
+	<!-- MAIN -->
 	<main>
 		<nav>
 			<div class="menu-left"></div>
 			<div class="menu-right"></div>
 		</nav>
-		<!-- TASK -->
-		
+		<!-- LIST & TASK -->
 		<div class="card-container">
 			<h2>List Title</h2>
 			<span class="temp-add-list">Add a list..</span>
-			<form class="add-list-form">
+			<!-- List Form -->
+			<form method='POST' class="add-list-form">
 				<input type="text" name="list-title" placeholder="Add a list.." id="input-task" autofocus="">
 				<div class="btn-list-actions">
-					<button value="save" class="save">Save</button>
+					<button type='button' value="" class="save">Save</button>
 					<button class="cancel">&times</button>
 				</div>
+			</form>
+			<span class="temp-add-task">Add a task..</span>
+			<!-- Task Form -->
+			<form class="add-task-form">
 				<textarea rows="10" cols="50"></textarea>
 				<div class="btn-task-actions">
 					<button value="save" class="save">Save</button>

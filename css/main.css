@@ -6,10 +6,12 @@ body {
 	font-family: 'Quicksand', sans-serif;
 }
 
-/* HEADER */
-div#logo {
-	font-size: 1.5em;
-	color: #d17076;
+
+
+/* --------- HEADER ---------- */
+
+button {
+	cursor: pointer;
 }
 
 h1 {
@@ -27,7 +29,13 @@ h2 {
 	display: none;
 }
 
+nav div {
+	display: inline-block;
+}
+
 div#logo {
+	font-size: 1.5em;
+	color: #d17076;
 	width: 33%;
 	text-align: center;
 }
@@ -39,16 +47,9 @@ form.input-nav-header {
 	width: 21em;
 }
 
-button {
-	cursor: pointer;
-}
 nav#main-nav {
 	background-color: #1a2a5a;
 	height: 3em;
-}
-
-nav div {
-	display: inline-block;
 }
 
 nav div.menu-left {
@@ -96,23 +97,31 @@ form.input-nav-header input:focus {
 	background-color: hsla(0,0%,100%,.2)
 }
 
-/* Main */
+/* --------- MAIN ---------- */
 
 main {
 	position: relative;
 	padding: 2em;
 }
 
+/* --------- CARD CONTAINER ---------- */
+
 div.card-container {
 	width: 20%;
 	background-color: transparent;
-	color: #b9bcc7;
+	color: #686971;
 	padding: 0.8em;
 	border-radius: 0.5em;
 	display: inline-block;
 }
 
- span.temp-add-list {
+/* --------- LIST ---------- */
+
+input {
+	width: 95%;
+}
+
+span.temp-add-list {
 	background: rgba(106, 124, 174, 0.5);
 	color: white;
 	border: none;
@@ -133,12 +142,6 @@ form.add-list-form {
 	display: none;
 }
 
-
-
-input {
-	width: 95%;
-}
-
 form.add-list-form input {
 	background: rgba(0,0,0,.08);
     border-color: #aaa;
@@ -157,12 +160,6 @@ form.add-list-form input::placeholder {
  
 form.add-list-form input:focus {
 	outline: none;
-}
-
-textarea {
-	width: 95%;
-	margin: 1em 0;
-	display: none;
 }
 
 button.save {
@@ -191,11 +188,38 @@ button.cancel:hover {
 	color: #3c3b3b;
 }
 
+/* --------- TASK ---------- */
 
-div.btn-list-actions {
-
+textarea {
+	width: 95%;
+	margin: 1em 0;
+	border: 0;
+	border-radius: 0.5em;
 }
 
-div.btn-task-actions {
+form.add-task-form {
+    border-color: #aaa;
+	color: gray;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 0.5em;
+	margin-bottom: 0.5em;
+	font-size: 1em;
 	display: none;
+}
+
+span.temp-add-task {
+	color: initial;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 0.5em;
+	margin-bottom: 1em;
+	display: none;
+}
+
+span.temp-add-task:hover {
+	background: rgba(188, 188, 189, 0.5);
+	text-decoration: underline;
 }
