@@ -41,8 +41,6 @@ displayListTitle.addEventListener('click', function(){
 	showTask.addEventListener('click', function(){
 		showTaskText();
 	});
-
-	// Se muestra la segunda forma para ingresar una tarea
 	
 });
 
