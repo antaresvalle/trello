@@ -1,7 +1,6 @@
 var inputListName = document.getElementsByClassName('temp-add-list')[0];
 
 inputListName.addEventListener('click', function(e){
-	// e.preventDefault();
 	showCard();
 });
 
@@ -13,9 +12,15 @@ console.log(displayListTitle);
 
 
 displayListTitle.addEventListener('click', function(){
-	// showCard();
+	
 	var inputTitle = document.getElementById('input-list').value;
 	console.log(inputTitle);
+
+	if(inputTitle.length == 0 || inputTitle == null) {
+		alert('Debes ingresar un nombre de lista');
+		return false;
+	}
+
 	var title = document.getElementsByTagName('h2')[0];
 	
 	title.textContent = inputTitle;
@@ -67,16 +72,33 @@ function showFormAddTask(){
 }
 
 function showTaskText(){
-	var inputTextTask = document.getElementById('input-task').value;
-	console.log(inputTextTask);
+	var inputText = document.getElementById('input-task');
+	var inputTextTask = inputText.value;
 
-	var task = document.getElementsByTagName('p')[0];
-	task.textContent = inputTextTask;
-	task.style.display = 'block';
+	if(inputTextTask.length == 0 || inputTextTask == null) {
+		alert('Debes ingresar una tarea');
+		return false;
+	}
+
+	// Crear p dentro del div que contiene la forma de task
+
+	var addedTaskContainer = document.getElementById('add-task-container');
+	
+	var addedTask = document.createElement('p');
+	var addedTskText = document.createTextNode(inputTextTask);
+
+	addedTask.appendChild(addedTskText);
+	addedTaskContainer.appendChild(addedTask);
+
+	inputText.value = '';
 
 	var getFormAddTask = document.getElementsByClassName("add-task-form")[0];
 	getFormAddTask.style.display = 'none';
 
 	var getFormAddTask = document.getElementsByClassName("temp-add-task")[0];
 	getFormAddTask.style.display = 'block';
+
+	addedTaskContainer.insertBefore(addedTask, getFormAddTask);
+
+	
 }

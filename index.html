@@ -9,12 +9,12 @@
 
 </head>
 <body>
-	<!-- HEADER -->
+	<!--*************************** HEADER ********************************-->
 	<header>
-		<!-- navigation -->
+		<!-- NAVIGATION -->
 		<nav id="main-nav">
 			<div class="menu-left">
-				<button id="boards" class="btn-main">Boards</button>
+				<button id="boards" class="btn-boards"><i class="fab fa-trello"></i>Boards</button>
 				<form class="input-nav-header">
 					<input type="" name=""><i class="fas fa-search"></i>
 				</form>
@@ -31,34 +31,42 @@
 			</div>
 		</nav>
 	</header>
-	<!-- MAIN -->
+	<!--*************************** MAIN ********************************-->
 	<main>
-		<nav>
-			<div class="menu-left"></div>
-			<div class="menu-right"></div>
+		<nav id="intern-nav">
+			<div class="intern-menu-left">
+				<button class="intern-btn"><strong>ToDo</strong></button>
+				<button class="intern-btn"><i class="far fa-star"></i></button>
+				<button class="intern-btn">Personal</button>
+				<button class="intern-btn"><i class="fas fa-briefcase"></i>Private</button>
+			</div>
+			<div class="intern-menu-right">
+				<button class="intern-btn"><i class="fas fa-ellipsis-h"></i>Show menu</button>
+			</div>
 		</nav>
-		<!-- LIST & TASK -->
+		<!-- CARD -->
 		<div class="card-container">
 			<h2>List Title</h2>
 			<span class="temp-add-list">Add a list..</span>
-			<!-- List Form -->
+			<!-- LIST -->
 			<form class="add-list-form">
-				<input type="text" name="list-title" placeholder="Add a list.." id="input-list" autofocus="">
+				<input type="text" name="list-title" placeholder="Add a list.." id="input-list" autofocus>
 				<div class="btn-list-actions">
 					<button type='button' value="" class="save">Save</button>
 					<button class="cancel">&times</button>
 				</div>
 			</form>
-			<p></p>
-			<span class="temp-add-task">Add a task..</span>
-			<!-- Task Form -->
-			<form class="add-task-form">
-				<textarea rows="8" cols="50" autofocus="" id="input-task"></textarea>
-				<div class="btn-task-actions">
-					<button type="button" value="" class="add-button">Add</button>
-					<button class="cancel">&times</button>
-				</div>
-			</form>
+			<div id="add-task-container">
+				<span class="temp-add-task">Add a task..</span>
+				<!-- TASK -->
+				<form class="add-task-form">
+					<textarea rows="8" cols="50" autofocus="" id="input-task"></textarea>
+					<div class="btn-task-actions">
+						<button type="button" value="" class="add-button">Add</button>
+						<button class="cancel">&times</button>
+					</div>
+				</form>
+			</div>
 		</div>
 	</main>
 

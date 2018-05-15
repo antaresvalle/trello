@@ -1,12 +1,10 @@
 body {
-	background-color: white; /*0d0f15*/
+	background-color: #0078c0; /*0d0f15*/
 	margin: 0;
 	position: relative;
 	box-sizing: border-box;
 	font-family: 'Quicksand', sans-serif;
 }
-
-
 
 /* --------- HEADER ---------- */
 
@@ -25,8 +23,10 @@ h1 {
 
 h2 {
 	margin: 0 0 0.5em 0;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	display: none;
+	padding: 0 0.3em;
+	color: black;
 }
 
 nav div {
@@ -35,7 +35,7 @@ nav div {
 
 div#logo {
 	font-size: 1.5em;
-	color: #d17076;
+	color: white;/*#d17076*/
 	width: 33%;
 	text-align: center;
 }
@@ -44,11 +44,11 @@ form.input-nav-header {
 	display: inline-block;
 	background-color: hsla(0,0%,100%,.3);
 	color: white;
-	width: 21em;
+	width: 12em;
 }
 
 nav#main-nav {
-	background-color: #1a2a5a;
+	background-color: #026aa7;/* 1a2a5a*/
 	height: 3em;
 }
 
@@ -60,17 +60,16 @@ nav div.menu-left {
 
 nav div.menu-right {
 	position: relative;
-	width: 33%;
+	width: 35%;
 	right: 0;
 	text-align: right;
 }
 
 form.input-nav-header input {
-	height: 2em;
+	height: 3em;
 	background-color: transparent;
-	width: 26em;
+	width: 15em;
 	border: none;
-	padding: 0.55em;
 	color: white;
 }
 
@@ -78,30 +77,92 @@ form.input-nav-header input:focus {
 	outline: none;
 }
 
-.btn-main {
+i.fab.fa-trello {
+	margin-right: 0.5em;
+}
+
+.btn-boards {
 	background-color: hsla(0,0%,100%,.3);
-	padding: 1.1em 2em;
 	border: none;
 	border-radius: 5px;
 	color: white;
+	font-size: 1em;
+	height: 2.2em;
+	width: 7em;
+	margin-right: 0.1em;
+}
+
+.btn-boards:hover {
+	background-color: hsla(0,0%,100%,.2);
+}
+
+.btn-main {
+	background-color: hsla(0,0%,100%,.3);
+	border: none;
+	border-radius: 5px;
+	color: white;
+	height: 2.2em;
+	width: 2.2em;
+	font-size: 1em;
+	margin-right: 0.1em;
 }
 
 .profile {
 	border-radius: 100%;
-	height: 3.7em;
-	width: 3.7em;
+	height: 2.3em;
+	width: 2.3em;
 	padding: 0;
 }
 
 .btn-main:hover {
-	background-color: hsla(0,0%,100%,.2)
+	background-color: hsla(0,0%,100%,.2);
 }
 
 /* --------- MAIN ---------- */
 
 main {
 	position: relative;
-	padding: 2em;
+}
+
+/* --------- INTERN NAV ---------- */
+
+nav#intern-nav {
+	padding-top: 0.3em;
+}
+
+nav div.intern-menu-left {
+	position: relative;
+	width: 60%;
+	padding: 0.3em 0.5em; 
+}
+
+nav div.intern-menu-right {
+	position: relative;
+	width: 38%;
+	right: 0;
+	text-align: right;
+	text-decoration: underline;
+}
+
+button.intern-btn {
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 0.9em;
+	padding: 0.5em;
+}
+
+button.intern-btn:hover{
+	background: rgba(0,0,0,.12);
+}
+
+
+i.fas.fa-briefcase {
+	margin-right: 0.5em;
+}
+
+i.fas.fa-ellipsis-h {
+	margin-right: 0.4em;
 }
 
 /* --------- CARD CONTAINER ---------- */
@@ -110,9 +171,10 @@ div.card-container {
 	width: 20%;
 	background-color: transparent;
 	color: #686971;
-	padding: 0.8em;
+	padding: 0.4em;
 	border-radius: 0.3em;
 	display: inline-block;
+	margin-left: 1em;
 }
 
 /* --------- LIST ---------- */
@@ -122,7 +184,7 @@ input {
 }
 
 span.temp-add-list {
-	background: rgba(106, 124, 174, 0.5);
+	background: rgba(0,0,0,.12);/*rgba(106, 124, 174, 0.5)*/ 
 	color: white;
 	border: none;
 	border-radius: 5px;
@@ -130,10 +192,11 @@ span.temp-add-list {
 	padding: 0.5em;
 	margin-bottom: 1em;
 	display: block;
+	width: 100%;
 }
 
 span.temp-add-list:hover {
-	background-color: #6a7cae;
+	background-color: rgba(0,0,0,.20);/*#6a7cae*/
 }
 
 form.add-list-form {
@@ -163,7 +226,7 @@ form.add-list-form input:focus {
 }
 
 button.save {
-	background-color: #aa6361;
+	background-color: #5aac44;/*#aa6361*/
 	border: none;
 	border-radius: 2px;
 	color: white;
@@ -172,7 +235,7 @@ button.save {
 }
 
 button.save:hover {
-	background-color: #975856;
+	background-color: #519839;/*#975856*/
 }
 
 button.cancel {
@@ -210,10 +273,9 @@ form.add-task-form {
 	display: none;
 }
 
-p {
+div#add-task-container p{
 	background-color: white;
 	padding: 0.3em;
-	display: none;
 }
 
 span.temp-add-task {
@@ -232,7 +294,7 @@ span.temp-add-task:hover {
 }
 
 button.add-button {
-	background-color: #aa6361;
+	background-color: #5aac44;
 	border: none;
 	border-radius: 2px;
 	color: white;
@@ -241,5 +303,5 @@ button.add-button {
 }
 
 button.add-button:hover {
-	background-color: #975856;
+	background-color: #519839;
 }
